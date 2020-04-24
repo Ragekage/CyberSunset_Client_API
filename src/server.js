@@ -285,7 +285,7 @@ app.post('/createuser', bodyParser(), (req, res) => {
                     console.log(dataFilter[0], password)
                     if(dataFilter[0].Password === password)
                     {
-                        if(dataFilter[0].Confirmation !== "true")
+                        if(dataFilter[0].Confirmed !== "true")
                         {
                             return "Need Email Confirm"
                         }

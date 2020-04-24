@@ -1,10 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import {main} from './Main'
 import './App.css';
 
 function App() {
-  console.log(main())
   return (
     <div className="App">
       <header className="App-header">
