@@ -67,10 +67,10 @@ app.get('/sendEmail', (req, res) => {
     res.send({express: 'yo i sent it'})
 })
 
-app.get('/dbtest', (req, res) => {
- var response = getPlayers()
-    res.send({express: response})
-})
+// app.get('/dbtest', (req, res) => {
+//  var response = getPlayers()
+//     res.send({express: response})
+// })
 
 app.post('/createuser', bodyParser(), (req, res) => {
     console.log(req)
