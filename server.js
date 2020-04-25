@@ -91,7 +91,7 @@ app.post('/createuser', bodyParser(), (req, res) => {
                 from: 'cybersunsetgame@gmail.com',
                 to: req.body.postData.email + ", cybersunsetgame@gmail.com",
                 subject: 'CyberSunset - Confirmation Email',
-                html: '<b>Welcome!</b><br> Love you sexy girl ;),  please use this link to confirm your email: http://localhost:3000/confirmation/' + confirmId
+                html: '<b>Welcome!</b><br> Love you sexy girl ;),  please use this link to confirm your email: https://www.cybersunset.co.uk/confirmation/' + confirmId
             };
 
             gmailTransport.sendMail(ConfirmationMail).then(res => { console.log(res)})
